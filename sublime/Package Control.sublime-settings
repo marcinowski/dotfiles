@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Djaneiro",
+		"GitGutter",
+		"HTMLBeautify",
+		"LESS",
+		"Package Control",
+		"requirementstxt",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-html-tidy",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pycodestyle",
+		"SublimeLinter-pyflakes",
+		"SublimeLinter-ruby"
+	]
+}
