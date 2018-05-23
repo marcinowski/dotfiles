@@ -10,3 +10,6 @@
 [submodule "vim/pack/marcin/start/nerdtree"]
 	path = vim/pack/marcin/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/pack/marcin/start/vim-airline"]
+	path = vim/pack/marcin/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
