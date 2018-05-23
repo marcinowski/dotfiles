@@ -7,3 +7,6 @@
 [submodule "vim/pack/marcin/start/fzf.vim"]
 	path = vim/pack/marcin/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "vim/pack/marcin/start/nerdtree"]
+	path = vim/pack/marcin/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

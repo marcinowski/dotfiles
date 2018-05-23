@@ -44,6 +44,11 @@ set dir=~/tmp
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
+" Custom key mappings
+" for fzf package
+map ; :Files<CR>
+map <C-o> :NERDTreeToggle<CR>
+
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
@@ -122,10 +127,6 @@ au BufNewFile,BufRead *.js, *.html, *css, *.less
   \ set tabstop=2
   \ set softtabstop=2
   \ set shiftwidth=2
-
-" Custom key mappings
-" for fzf package
-map ; :Files<CR>
 
 " Add optional packages.
 "
