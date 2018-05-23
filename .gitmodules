@@ -1,3 +1,9 @@
 [submodule "vim/pack/marcin/start/gitgutter"]
 	path = vim/pack/marcin/start/gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim/pack/marcin/start/fzf"]
+	path = vim/pack/marcin/start/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "vim/pack/marcin/start/fzf.vim"]
+	path = vim/pack/marcin/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git

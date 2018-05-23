@@ -121,6 +121,9 @@ au BufNewFile,BufRead *.js, *.html, *css, *.less
   \ set softtabstop=2
   \ set shiftwidth=2
 
+" Custom key mappings
+" for fzf package
+map ; :Files<CR>
 
 " Add optional packages.
 "
