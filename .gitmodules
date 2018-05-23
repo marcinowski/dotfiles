@@ -19,3 +19,6 @@
 [submodule "vim/pack/marcin/start/tcomment"]
 	path = vim/pack/marcin/start/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "vim/pack/marcin/start/YouCompleteMe"]
+	path = vim/pack/marcin/start/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
