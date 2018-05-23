@@ -26,18 +26,18 @@ if has("vms")
 else
   set backup		" keep a backup file (restore to previous version)
   set backupdir=~/tmp
-  set undofile		" keep an undo file (undo changes after closing)
 endif
+set noundofile		" don't keep an undo file (undo changes after closing)
+set swapfile		" save swapfiles
+set dir=~/tmp		" swapfiles dir
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set nu                  " show line numbers
 set encoding=utf-8
-set splitbelow
+set splitbelow		" default split directions
 set splitright
-set swapfile
-set dir=~/tmp
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -112,22 +112,6 @@ if has('langmap') && exists('+langnoremap')
   " compatible).
   set langnoremap
 endif
-
-" Language specific linting
-au BufNewFile,BufRead *.py
-  \ set tabstop=4
-  \ set softtabstop=4
-  \ set shiftwidth=4
-  \ set textwidth=79
-  \ set expandtab
-  \ set autoindent
-  \ set fileformat=unix
-  \ match BadWhitespace /\s\+$/
-
-au BufNewFile,BufRead *.js, *.html, *css, *.less
-  \ set tabstop=2
-  \ set softtabstop=2
-  \ set shiftwidth=2
 
 " Add optional packages.
 "
