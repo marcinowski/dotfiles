@@ -35,6 +35,8 @@ set nu                  " show line numbers
 set encoding=utf-8
 set splitbelow
 set splitright
+set swapfile
+set dir=~/tmp
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
