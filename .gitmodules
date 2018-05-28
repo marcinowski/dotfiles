@@ -22,3 +22,6 @@
 [submodule "vim/pack/marcin/start/YouCompleteMe"]
 	path = vim/pack/marcin/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "vim/pack/marcin/start/typescript-vim"]
+	path = vim/pack/marcin/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim
