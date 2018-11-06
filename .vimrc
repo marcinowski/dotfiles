@@ -38,6 +38,11 @@ set nu                  " show line numbers
 set encoding=utf-8
 set splitbelow		" default split directions
 set splitright
+set tabstop=2
+set expandtab
+set shiftwidth=2
+
+let NERDTreeShowHidden=1
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -96,7 +101,9 @@ if has("autocmd")
     \ endif
 
   augroup END
-
+  augroup bashalias
+    autocmd BufNewFile,BufRead .bash_custom set filetype=sh
+  augroup END
 else
 
   set autoindent		" always set autoindenting on

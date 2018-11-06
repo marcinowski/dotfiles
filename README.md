@@ -2,6 +2,8 @@ Testing out the submodules approach for vim packages
 as in the https://marcin.com/vim-packages/ article.
 
 TL;DR:
+0. to initialize
+  git submodule update --init --remote
 1. to add a package:
 
 	cd ~/dotfiles
@@ -23,5 +25,5 @@ TL;DR:
 	git commit
 
 4. to "install" this repo for vim:
- - run `git submodule update --remote --merge`
- - copy .vimrc and vim to ~
+  run setup.sh
+  put your custom stuff to ~/.bash_custom
