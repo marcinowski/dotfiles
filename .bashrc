@@ -131,5 +131,7 @@ if [ -f ~/.bash_custom ]; then
     . ~/.bash_custom
 fi
 
+[ -f ~/.jump.sh ] && source ~/.jump.sh
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 

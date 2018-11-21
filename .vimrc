@@ -84,7 +84,7 @@ if has("autocmd")
   " 'cindent' is on in C files, etc.
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
-  autocmd BufWritePre * %s/\s\+$//g
+  autocmd BufWritePre * %s/\s\+$//ge
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
   au!

@@ -2,7 +2,7 @@
 
 p=$(dirname `realpath $0`)
 
-for fn in '.vimrc' '.bashrc' '.bash_aliases';
+for fn in '.vimrc' '.bashrc' '.bash_aliases' '.jump.sh';
 do
   echo "copying $p/$fn ..."
   cd ~
