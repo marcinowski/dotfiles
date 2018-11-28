@@ -11,6 +11,7 @@ j() {
       echo $name $PWD >> $path
     else
       echo $name is already registered
+      return
     fi
     echo Path $PWD added as $name
   }
@@ -21,8 +22,9 @@ j() {
     if [ -z "$exists" ]
     then
       echo $name is not registered
+      return
     fi
-    p=$(awk -v pattern=$name '$1 ~ pattern {p=1} END {if(p) print $2}' $path)
+    p=$(awk -v pattern=$name '$1 ~ pattern {print $2}' $path)
     cd $p
   }
 
