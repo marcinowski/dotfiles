@@ -135,3 +135,6 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
