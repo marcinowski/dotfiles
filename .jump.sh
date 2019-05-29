@@ -5,7 +5,7 @@ j() {
 
   add() {
     name=$1
-    exists=$(cat $path | awk '{print $1}' | grep $name)
+    exists=$(cat $path | awk '{print $1}' | grep "^$name")
     if [ -z "$exists" ]
     then
       echo $name $PWD >> $path
@@ -18,13 +18,13 @@ j() {
 
   jump() {
     name=$1
-    exists=$(cat $path | awk '{print $1}' | grep $name)
+    exists=$(cat $path | awk '{print $1}' | grep "^$name")
     if [ -z "$exists" ]
     then
       echo $name is not registered
       return
     fi
-    p=$(awk -v pattern=$name '$1 ~ pattern {print $2}' $path)
+    p=$(awk -v pattern="^$name" '$1 ~ pattern {print $2}' $path)
     cd $p
   }
 
@@ -33,7 +33,7 @@ j() {
   }
 
   remove() {
-    grep -v $1 $path > $path.temp
+    grep -v "^$1" $path > $path.temp
     mv $path.temp $path
   }
 
